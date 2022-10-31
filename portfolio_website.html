@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script
+        src="http://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="portfolio_website.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+
+        <title>Portfolio Website</title>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="main">
+                <h1>Howdy!</h1>
+                <img src="images/Home.jpg" width="320" height="350" />
+                <h3 id="name">O'Ryan Ethington</h3>
+                <p id="quote">“Experience life in all possible ways -- good-bad, bitter-sweet, dark-light, summer-winter. Experience all the dualities. Don't be afraid of experience, because the more experience you have, the more mature you become.” ― Osho </p>
+                <img src="images/Luis.PNG" width="220" height="250" id="luis"/>
+                <img src="images/Paddle.JPG" width="220" height="250" id="paddle" />
+                <img src="images/Rollo.PNG" width="220" height="250" id="rollo" />
+
+            </div>
+            <div id="sidebar">
+
+                <h3 id="about">About Me</h3>
+                    <div id="aboutDiv">
+                        <h4 id="breakdown">Lets Break It Down</h4>
+                            <ul>
+                                <li>Dog Dad</li>
+                                <li>Entrepreneur</li>
+                                <li>Traveler</li>
+                                <li>Degenerate.. The Fun Kind</li>
+                                <li>Avid Paddle Boarder</li>
+                                <p id="intro">I grew up in Tacoma, WA. I spent most of my childhood in an office, learning how to succeed in business. I thrive on the hustle. In that, I developed a drive to learn and become a master in many areas. I put my business aside to persue this. It is not easy breaking into another industry, as many of my classmates will know. But I am up for the challenge. I am excited to help learn and help my classmates cross the finish line with me.</p>
+                            </ul>
+                    </div>
+                <h3 id="the_Why">Why am I here?</h3>
+                    <div id="why">
+                        <ol>
+                            <li>Learning New Skills</li>
+                                <p id="skills">I love learning new things. If I didn't challenge myself, life would be boring!</p>
+                            <li>Work Life Balance</li>
+                                <p id="work">Owning a business, I have experience working 80+ hours per week. Not the best for your health long term</p>
+                            <li>Love Solving Puzzles</li>
+                                <p id="love">I love problem solving. Just in this project I have become even more pumped to develop</p>
+                        </ol>
+                    </div>
+                <h3 id="contact_Me">Contact Me</h3>
+                    <div id="contact">
+                        <a href="https://www.instagram.com/beardedfury_/" target="_blank"><h4 id="instagram">Instagram</h4></a>
+                        <a href="https://www.linkedin.com/in/o-ryan-ethington-a782351a3/" target="_blank"><h4 id="linkdin">Linkdlin</h4></a>
+                        <form></form>
+                    </div>
+                <h3 id="cuter">Who's A Cute Boy?</h3>
+                    <div id="vote">
+                        <h4 id="breakdown">Luis is the Husky, Rollo is the Pitty.. Vote For Who is Cuter..</h4>
+                        <form action="http://www.example.com/profile.php">
+                            <p>
+                             <input type="checkbox" name="service"
+                             value="Luis" /> Luis
+                             <input type="checkbox" name="service"
+                             value="Rollo" /> Rollo 
+                            </p>
+                            <button id="submit" type="button">Submit</button>
+                            
+                        </form>
+                        <img src="images/Luis.PNG" width="120" height="150" id="luis"/>
+                        <img src="images/Rollo.PNG" width="120" height="150" id="rollo" />
+                        <div id="success">
+                            <p>Jokes on YOU! They're both cute!</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript">
+        $(document).ready(function(){
+                $("#aboutDiv").hide();
+                $("#why").hide();
+                $("#contact").hide();
+                $("#vote").hide();
+                $("#success").hide();
+            
+            $('#about').click(function(){
+                $("#aboutDiv").toggle("slow")
+
+            })
+            $('#the_Why').click(function(){
+                $("#why").toggle("slow")
+
+            })
+            $('#contact_Me').click(function(){
+                $("#contact").toggle("slow")
+
+            })
+            $('#cuter').click(function(){
+                $("#vote").toggle("slow")
+
+            })
+            $('#submit').click(function(){
+                $("#success").show("slow")
+
+            })
+        
+        })
+        
+
+    </script>
+
+</html>
